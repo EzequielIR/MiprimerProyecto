@@ -1,5 +1,5 @@
 <?php
-    $Persona = array (
+    $persona = array (
         array(
             array(
                 array(
@@ -10,11 +10,10 @@
             ,'Espinoza,')
         ,'Isidoro,')
     ,'Ezequiel,');
-
     
-    echo $Persona[1]."<br />";
-    echo $Persona[0][1]."<br />";
-    echo $Persona[0][0][1]."<br />";
-    echo $Persona[0][0][0][1]."<br />";
-    echo $Persona[0][0][0][0][0]."<br />";
+    echo $persona[1]."<br />";
+    echo $persona[0][1]."<br />";
+    echo $persona[0][0][1]."<br />";
+    echo $persona[0][0][0][1]."<br />";
+    echo $persona[0][0][0][0][0]."<br />";
 ?>
