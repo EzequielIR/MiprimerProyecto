@@ -1,6 +1,6 @@
 <?php
-    $Nombre = 'Ezequiel';
-    $Num = 3;
+    $nombre = 'Ezequiel';
+    $num = 3;
     $bool = true;
     $floo = 1.1;
     define('year',2001);
@@ -22,17 +22,17 @@
         echo APEIDO."<br>";
         echo year."<br>";
         echo "VARIABLES"."<br>";
-        echo "Nombre = $Nombre"."<br>";
-        echo "Numero = $Num"."<br>";
+        echo "Nombre = $nombre"."<br>";
+        echo "Numero = $num"."<br>";
         echo "Boleano = $bool"."<br>";
         echo "Decimal = $floo"."<br>";
-        $Nombre = 'Isidoro';
-        $Num = 6;
+        $nombre = 'Isidoro';
+        $num = 6;
         $bool = false;
         $floo = 2.2;
         echo "CAMBIO"."<br>";
-        echo "Nombre = $Nombre"."<br>";
-        echo "Numero = $Num"."<br>";
+        echo "Nombre = $nombre"."<br>";
+        echo "Numero = $num"."<br>";
         echo "Boleano = $bool"."<br>";
         echo "Decimal = $floo"."<br>";
     ?>
