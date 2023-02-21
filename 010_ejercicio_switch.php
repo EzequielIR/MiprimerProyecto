@@ -1,19 +1,16 @@
-<?php 
-    #$motor = 2
-    $motor = (isset($motor))?$motor:0;
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes</title>
+    <title>Motor</title>
 </head>
 <body>
     <?php
-    echo'<h1>'.$motor.'</h1>';
+    $motor = 4;
+    $motor = (isset($motor))?$motor:0;
+    echo'<h1>Usted selecciono el motor: '.$motor.'</h1>';
     switch ($motor) {
         case 0:
             echo'<h1>NO A ESTABLECIDO UN VALOR DEFINIDO PARA EL TIPO DE BOMBA</h1>';
