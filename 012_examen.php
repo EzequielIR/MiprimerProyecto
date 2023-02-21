@@ -63,9 +63,6 @@
         $conter=1;
         foreach($materia as $nmat){
             echo $nmat.': ';
-            while ($a <= 10) {
-                # code...
-            }
         }
         echo "<br>";
     }
