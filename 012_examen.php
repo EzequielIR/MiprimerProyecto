@@ -45,17 +45,12 @@
     ,'Ezequiel','Roberto','Alverto','Archivaldo','Alfredo');
     
     $materia = array ('Esp','Mat','CN','EF','FCE');
-    $calificacion = array (
-        array(
-            array(
-                array(
-                    array(
-                        6,7,5,8,10
-                    )
-                ,7,8,5,6,10)
-            ,9,8,5,10,8)
-        ,8,6,5,10,9)
-    ,9,8,5,7,9);
+
+    $esp = array ('Esp',9,8,5,7,9);
+    $matr = array('Mat',6,7,5,8,10);
+    $cien = array('CN',7,8,5,6,10);
+    $edu = array('EF',9,8,5,10,8);
+    $form = array('FCE',8,6,5,10,9);
 
     $contar = count($alumno)."<br>";
     
@@ -65,8 +60,12 @@
         echo $alumno[0][0][$i]."<br />";
         echo 'Numero de control: '.$alumno[0][0][0][$i]."<br />";
         echo 'Edad: '.$alumno[0][0][0][0][($i-1)]."<br />";
+        $conter=1;
         foreach($materia as $nmat){
             echo $nmat.': ';
+            while ($a <= 10) {
+                # code...
+            }
         }
         echo "<br>";
     }
