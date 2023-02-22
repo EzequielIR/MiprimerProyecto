@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php
-    $motor = 4;
+    $motor;
     $motor = (isset($motor))?$motor:0;
     echo'<h1>Usted selecciono el motor: '.$motor.'</h1>';
     switch ($motor) {
