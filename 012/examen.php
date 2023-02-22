@@ -39,8 +39,7 @@ define('Alfredo',5);
 </head>
 <body>
     <center>
-    <img src= "rayo1.png">
-    <h1>Escuela Secundaria Rayo</h1>
+    <img src="inst.png">
     <hr style="border:5px solid blue;width:100%">
     <h1>Clase 1A</h1>
 <?php
@@ -133,7 +132,6 @@ define('Alfredo',5);
         }else {
             echo 'Estado: Reprovado.'.'<br />';
         }
-        echo '<hr style="border:5px solid black;width:100%">';
         ?>
         </div>
         <?php

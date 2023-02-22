@@ -1,5 +1,18 @@
 .Container{
-    background-color: aqua;
+    width: 714px;
+    height: 260px;
+    background-image: url(fondo.jpg);
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    border-width: 5px;
+    border-style: groove;
+    border-color: rgb(228, 14, 14);
+}
+body{
+    background-image: url(fondopagina.jpg);
+
+}
+img{
+    width: 200px;
+    height: 200px;
 }
