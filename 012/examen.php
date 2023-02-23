@@ -41,7 +41,12 @@ define('Alfredo',5);
 <body>
     <center>
     <img src="inst.png">
-
+    <video class="fondocss"
+        loop="loop"
+        autoplay="autoplay">
+            <source scr="fondo.mp4"
+            type="video/mp4" />
+    </video/>
     <section class="clase"><h1>Clase 1A</h1></section>
 <?php
     #imprimir variables difinidas

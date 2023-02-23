@@ -10,11 +10,6 @@
     border-style: groove;/*Estilo de marco*/
     border-color:rgb(123, 6, 146);/*Color de marco*/
 }
-body
-{
-    background-image: url(fondopagina.jpg);/*Fondo del body*/
-
-}
 img
 {
     width: 250px;/*Ancho de imagen*/
@@ -58,4 +53,14 @@ img
     border-width: 5px;/*Ancho del  marco del contenedor*/
     border-style: groove;/*Tipo de  marco del contenedor*/
     border-color: rgb(123, 6, 146);/*Color de  marco del contenedor*/
+}
+
+.fondocss
+{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
 }
