@@ -40,17 +40,26 @@ define('Alfredo',5);
 <body>
     <center>
     <img src="inst.png">
-    <hr style="border:5px solid blue;width:100%">
-    <h1>Clase 1A</h1>
+
+    <section class="clase"><h1>Clase 1A</h1></section>
 <?php
-    echo '<h1>'
+    echo '<section class="lista"><h2>'
         .'Lista de clases:'.'<br />'
         .Ezequiel.'.-Ezequiel<br />'
         .Roberto.'.-Roberto<br />'
         .Alverto.'.-Alverto<br />'
         .Archivaldo.'.-Archivaldo<br />'
         .Alfredo.'.-Alfredo<br />'.
-    '</h1>';
+    '</h2></section>';
+
+    $ponderacionmaterias = array('Practicas'=>'15%','Investigacion'=>'15%','Participacion'=>'10%','Examen'=>'60%');
+
+    echo '<section class="ponderacion">'."<h1>Criterios de evaluación:<br />
+    Practicas: $ponderacionmaterias[Practicas]<br />
+    Investigación: $ponderacionmaterias[Investigacion]<br />
+    Participación: $ponderacionmaterias[Participacion]<br />
+    Examen: $ponderacionmaterias[Examen]<br /><h1/></section>";
+
     $contar = 0;
     $alumno = array (
         array(
@@ -76,10 +85,8 @@ define('Alfredo',5);
     $edu = array('EF',9,8,5,10,8);
     $forma = array('FCE',8,6,5,10,9);
 
-    $ponderacionmaterias = array('Practicas'=>'15%','Investigacion'=>'15%','Participacion'=>'10%','Examen'=>'60%');
-
     $contar = count($alumno)."<br>";
-    echo '<hr style="border:5px solid black;width:100%">'; 
+
     for($i=1;$i <= (intval($contar)-1);$i++){
         ?>
         <div class="Container">
@@ -136,22 +143,18 @@ define('Alfredo',5);
         </div>
         <?php
     }
-
-    echo '<hr style="border:5px solid red;width:100%">';
+    ?>
+        <div class="prom">
+    <?php
     rsort($promgen);
-    echo '<h1>Alunmos acomodados por calificación:<h1/>';
+    echo '<h2>Promedios:<h2/><ol>';
     foreach($promgen as $imp){
         echo '<li>'.$imp.'</li>';
     }
-    echo '<hr style="border:5px solid red;width:100%">';
-
-    echo '<hr style="border:5px solid green;width:100%">';
-    echo "<h1>Ponderacion para las materias:<br />
-    Practicas: $ponderacionmaterias[Practicas]<br />
-    Investigación: $ponderacionmaterias[Investigacion]<br />
-    Participación: $ponderacionmaterias[Participacion]<br />
-    Examen: $ponderacionmaterias[Examen]<br /><h1/>";
-    echo '<hr style="border:5px solid green;width:100%">';
+    ?>
+        </ol></div>
+    <?php
+    
 ?>
  <center/>
 </body>

@@ -1,4 +1,6 @@
-.Container{
+.Container
+{
+    font-size: 28px;
     width: 714px;
     height: 260px;
     background-image: url(fondo.jpg);
@@ -6,13 +8,54 @@
     font-weight: bold;
     border-width: 5px;
     border-style: groove;
-    border-color: rgb(228, 14, 14);
+    border-color:rgb(123, 6, 146);
 }
-body{
+body
+{
     background-image: url(fondopagina.jpg);
 
 }
-img{
-    width: 200px;
-    height: 200px;
+img
+{
+    width: 250px;
+    height: 250px;
+}
+.lista
+{
+    background-color: darkgreen;
+    width: 290px;
+    height: 260px;
+    border-width: 5px;
+    border-style: groove;
+    border-color: rgb(123, 6, 146);
+    float: left;
+}
+
+.ponderacion
+{
+    background-color: darkgreen;
+    width: 290px;
+    height: 260px;
+    border-width: 5px;
+    border-style: groove;
+    border-color: rgb(123, 6, 146);
+    float: right;
+}
+.clase
+{
+    font-size: 50px;
+    text-align: center;
+    background-color: rgb(123, 6, 146);
+    width: 100%;
+    height: 100px;
+}
+.prom
+{
+    text-align: center;
+    background-color: darkgreen;
+    width: 400px;
+    height: 240px;
+    border-width: 5px;
+    border-style: groove;
+    border-color: rgb(123, 6, 146);
 }
