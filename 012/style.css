@@ -8,7 +8,7 @@
     font-weight: bold;/*Letras negrita*/
     border-width: 5px;/*Tamaño del marco*/
     border-style: groove;/*Estilo de marco*/
-    border-color:rgb(123, 6, 146);/*Color de marco*/
+    border-color:rgb(0, 0, 0);/*Color de marco*/
 }
 img
 {
@@ -17,50 +17,50 @@ img
 }
 .lista
 {
-    background-color: darkgreen;/*Color de fondo*/
+    background-color: rgb(192, 28, 207);/*Color de fondo*/
     width: 290px;/*Ancho del contenedor*/
     height: 260px;/*largo del contenedor*/
     border-width: 5px;/*Ancho del  marco del contenedor*/
     border-style: groove;/*Tipo de  marco del contenedor*/
-    border-color: rgb(123, 6, 146);/*Color de  marco del contenedor*/
+    border-color: rgb(0, 0, 0);/*Color de  marco del contenedor*/
     float: left;/*Pocicion del contenedor*/
 }
 
 .ponderacion
 {
-    background-color: darkgreen;/*Color de fondo*/
+    background-color: rgb(192, 28, 207);/*Color de fondo*/
     width: 290px;/*Ancho del contenedor*/
     height: 260px;/*largo del contenedor*/
     border-width: 5px;/*Ancho del  marco del contenedor*/
     border-style: groove;/*Tipo de  marco del contenedor*/
-    border-color: rgb(123, 6, 146);/*Color de  marco del contenedor*/
+    border-color: rgb(0, 0, 0);/*Color de  marco del contenedor*/
     float: right;/*Pocicion del contenedor*/
 }
 .clase
 {
-    font-size: 50px;/*Tamaño de fuente*/
-    text-align: center;/*Alineación del texto*/
-    background-color: rgb(123, 6, 146);/*Color de fondo*/
-    width: 100%;/*Ancho del contenedor*/
-    height: 100px;/*largo del contenedor*/
+    border-style: groove;/*Tipo de  marco del contenedor*/
+    border-color: rgb(255, 0, 0);/*Color de  marco del contenedor*/
+    font-size: 20px;/*Tamaño de fuente*/
+    width: 250px;/*Ancho del contenedor*/
+    height: 80px;/*largo del contenedor*/
 }
 .prom
 {
     text-align: center;/*Alineación del texto*/
-    background-color: darkgreen;/*Color de fondo*/
+    background-color: rgb(192, 28, 207);/*Color de fondo*/
     width: 400px;/*Ancho del contenedor*/
     height: 240px;/*largo del contenedor*/
     border-width: 5px;/*Ancho del  marco del contenedor*/
     border-style: groove;/*Tipo de  marco del contenedor*/
-    border-color: rgb(123, 6, 146);/*Color de  marco del contenedor*/
+    border-color: rgb(0, 0, 0);/*Color de  marco del contenedor*/
 }
-
-.fondocss
+video
 {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
+    position: fixed;/*Pocicion de video*/
+    min-width: 100%;/*Tamaño minimo de video ancho*/
+    min-height: 100%;/*Tamano miniomo de video largo*/
+    top: 50%;/*Pocicion de video arriba*/
+    left: 50%;/*Pocicion de video izquierda*/
+    transform: translateX(-50%) translateY(-50%);/*Mover el video hacia los vordes*/
+    z-index: -1;/*Pocicion de video de fondo con eje z*/
 }

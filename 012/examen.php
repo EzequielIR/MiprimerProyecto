@@ -39,15 +39,11 @@ define('Alfredo',5);
     <title>Examen</title>
 </head>
 <body>
+    <video src="fondo.mp4" autoplay loop muted></video>
     <center>
     <img src="inst.png">
-    <video class="fondocss"
-        loop="loop"
-        autoplay="autoplay">
-            <source scr="fondo.mp4"
-            type="video/mp4" />
-    </video/>
     <section class="clase"><h1>Clase 1A</h1></section>
+    <hr style="border: 1px; width:100%">
 <?php
     #imprimir variables difinidas
     echo '<section class="lista"><h2>'
@@ -167,6 +163,7 @@ define('Alfredo',5);
         }
         ?>
         </div>
+        <hr style="border: 1px; width:100%">
         <?php
     }
     ?>
@@ -183,6 +180,6 @@ define('Alfredo',5);
     <?php
     
 ?>
- <center/>
+</center>
 </body>
 </html>
