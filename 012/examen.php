@@ -45,7 +45,7 @@ define('Alfredo',5);
     <section class="clase"><h1>Clase 1A</h1></section>
     <hr style="border: 1px; width:100%">
 <?php
-    #imprimir variables difinidas
+    #imprimir variables definidas
     echo '<section class="lista"><h2>'
         .'Lista de clases:'.'<br />'
         .Ezequiel.'.-Ezequiel<br />'
@@ -58,7 +58,7 @@ define('Alfredo',5);
     #Arreglo asociativo
     $ponderacionmaterias = array('Practicas'=>'15%','Investigacion'=>'15%','Participacion'=>'10%','Examen'=>'60%');
 
-    #Imprimir variables definidas
+    #Imprecion de arreglo asociativo
     echo '<section class="ponderacion">'."<h1>Criterios de evaluación:<br />
     Practicas: $ponderacionmaterias[Practicas]<br />
     Investigación: $ponderacionmaterias[Investigacion]<br />
@@ -78,6 +78,7 @@ define('Alfredo',5);
         ,'Espinoza','Hernandez','Gonzales','Salazar','Ramirez')
     ,'Ezequiel','Roberto','Alverto','Archivaldo','Alfredo');
     
+    #Arreglos
     $numtel = array(4871053694,null,4879012456,null,4874390235);
 
     $materia = array ('Esp','Mat','CN','EF','FCE');
