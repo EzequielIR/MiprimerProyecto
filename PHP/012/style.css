@@ -64,3 +64,8 @@ video
     transform: translateX(-50%) translateY(-50%);/*Mover el video hacia los vordes*/
     z-index: -1;/*Pocicion de video de fondo con eje z*/
 }
+.Todo
+{
+    float: left;
+    text-align: center;/*Alineación del texto*/
+}

@@ -114,7 +114,6 @@ define('Alfredo',5);
         $cal = 0;
         foreach($materia as $nmat){
             echo $nmat.': ';
-
             #switch para comprovar de que materia es la calificación
             switch ($nmat) {
                 case $esp[0]:
@@ -181,6 +180,9 @@ define('Alfredo',5);
     <?php
     
 ?>
+<form action="ex2.php" method="post">
+<button type="submit">Buscar</button>
+</form>
 </center>
 </body>
 </html>
