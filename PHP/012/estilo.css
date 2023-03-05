@@ -19,30 +19,11 @@ img
 {
     background-color: rgb(192, 28, 207);/*Color de fondo*/
     width: 290px;/*Ancho del contenedor*/
-    height: 260px;/*largo del contenedor*/
+    height: 500;/*largo del contenedor*/
     border-width: 5px;/*Ancho del  marco del contenedor*/
     border-style: groove;/*Tipo de  marco del contenedor*/
     border-color: rgb(0, 0, 0);/*Color de  marco del contenedor*/
     float: left;/*Pocicion del contenedor*/
-}
-
-.ponderacion
-{
-    background-color: rgb(192, 28, 207);/*Color de fondo*/
-    width: 290px;/*Ancho del contenedor*/
-    height: 260px;/*largo del contenedor*/
-    border-width: 5px;/*Ancho del  marco del contenedor*/
-    border-style: groove;/*Tipo de  marco del contenedor*/
-    border-color: rgb(0, 0, 0);/*Color de  marco del contenedor*/
-    float: right;/*Pocicion del contenedor*/
-}
-.clase
-{
-    border-style: groove;/*Tipo de  marco del contenedor*/
-    border-color: rgb(255, 0, 0);/*Color de  marco del contenedor*/
-    font-size: 20px;/*Tamaño de fuente*/
-    width: 250px;/*Ancho del contenedor*/
-    height: 80px;/*largo del contenedor*/
 }
 .prom
 {
@@ -63,9 +44,4 @@ video
     left: 50%;/*Pocicion de video izquierda*/
     transform: translateX(-50%) translateY(-50%);/*Mover el video hacia los vordes*/
     z-index: -1;/*Pocicion de video de fondo con eje z*/
-}
-.Todo
-{
-    float: left;
-    text-align: center;/*Alineación del texto*/
 }
