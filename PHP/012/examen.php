@@ -36,30 +36,7 @@ define('Alfredo', 5);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
-    <style type="text/css">
-        a:link,
-        a:visited,
-        a:active {
-            text-decoration: none;
-            color: black;
-            font-size: 25px;
-        }
-
-        aside {
-            width: 20%;
-            padding-left: 0.5rem;
-            margin-left: 0.5rem;
-            float: right;
-            box-shadow: inset 5px 0 5px -5px;
-            font-style: italic;
-            color: black;
-            background-color: rgb(192, 28, 207);
-            border-width: 5px;
-            border-style: groove;
-            border-color: rgb(0, 0, 0);
-        }
-    </style>
+    <link rel="stylesheet" href="estilo.css" type="text/css">
     <title>Examen</title>
 </head>
 <video src="fondo.mp4" autoplay loop muted></video>
@@ -96,12 +73,12 @@ define('Alfredo', 5);
         <aside>
             <div class="links">
                 <h1>Enlaces:</h1>
-                <li><a href="#">Información</a></br></li>
+                <li><a href="ex2.php">Información</a></br></li>
                 <li><a href="#">Materias</a></br></li>
                 <li><a href="#">Avisos</a></br></li>
                 <li><a href="#">Contacto</a></br></li>
                 </br>
-                <hr style="border:3px solid black;width:90%">
+                <hr style="border:3px solid black;width:100%">
                 <h1>Acerca de la escuela</h1>
                 <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem rerum molestias accusamus molestiae autem hic dolor nam neque sed enim dolore ut laudantium quo, optio quam eaque a vitae sunt.
                     Asperiores fuga eius veritatis, consequatur labore blanditiis dolorum qui fugit nostrum magnam minus laborum aliquam et culpa placeat quis neque impedit nihil praesentium dicta ipsum. Eos harum repellat eum? Saepe!

@@ -45,3 +45,25 @@ video
     transform: translateX(-50%) translateY(-50%);/*Mover el video hacia los vordes*/
     z-index: -1;/*Pocicion de video de fondo con eje z*/
 }
+
+a:link,
+a:visited,
+a:active 
+{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+aside 
+{
+    width: 20%;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px;
+    font-style: italic;
+    color: black;
+    background-color: rgb(192, 28, 207);
+    border-width: 5px;
+    border-style: groove;
+    border-color: rgb(0, 0, 0);
+}
