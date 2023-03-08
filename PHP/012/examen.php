@@ -40,7 +40,12 @@ define('Alfredo', 5);
     <title>Examen</title>
 </head>
 <video src="fondo.mp4" autoplay loop muted></video>
-<center><img src="inst.png"></center>
+<center>
+    <figure>
+        <img src="inst.png" alt="Logo escuela">
+        <figcaption>Escuela de chorrillos militar</figcaption>
+    </figure>
+</center>
 
 <body>
     <center>
@@ -55,32 +60,33 @@ define('Alfredo', 5);
         #Imprecion de arreglo asociativo
         #imprimir variables definidas
         echo '<section class="lista">'
-            . '<h1>Criterios de evaluación:<br />'
-            . 'Practicas:' . $ponderacionmaterias['Practicas'] . '<br />'
-            . 'Investigación:' . $ponderacionmaterias['Investigacion'] . '<br />'
-            . 'Participación:' . $ponderacionmaterias['Participacion'] . '<br />'
-            . 'Examen:' . $ponderacionmaterias['Examen'] . '<br /><h1>'
-            . '<hr style="border:3px solid black;width:100%"><h2>'
+            . '<h1>';
+        echo print_r($ponderacionmaterias);
+        echo '</h1>'
+            . '<hr style="border:3px solid black;width:100%"><h2><pre>'
             . 'Lista de clases:' . '<br />'
             . Ezequiel . '.-Ezequiel<br />'
             . Roberto . '.-Roberto<br />'
             . Alverto . '.-Alverto<br />'
             . Archivaldo . '.-Archivaldo<br />'
             . Alfredo . '.-Alfredo<br />' .
-            '</h2></section>';
+            '</pre></h2></section>';
 
         ?>
         <aside>
             <div class="links">
                 <h1>Enlaces:</h1>
-                <li><a href="ex2.php">Información</a></br></li>
-                <li><a href="#">Materias</a></br></li>
-                <li><a href="#">Avisos</a></br></li>
-                <li><a href="#">Contacto</a></br></li>
+                <ol>
+                    <li><a href="ex2.php" target="_blank">Información</a></br></li>
+                    <li><a href="ex2.php" target="_self">Materias</a></br></li>
+                    <li><a href="ex2.php" target="_parent">Avisos</a></br></li>
+                    <li><a href="ex2.php" target="_top">Contacto</a></br></li>
+                </ol>
                 </br>
                 <hr style="border:3px solid black;width:100%">
                 <h1>Acerca de la escuela</h1>
-                <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem rerum molestias accusamus molestiae autem hic dolor nam neque sed enim dolore ut laudantium quo, optio quam eaque a vitae sunt.
+                <article>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem rerum molestias accusamus molestiae autem hic dolor nam neque sed enim dolore ut laudantium quo, optio quam eaque a vitae sunt.
                     Asperiores fuga eius veritatis, consequatur labore blanditiis dolorum qui fugit nostrum magnam minus laborum aliquam et culpa placeat quis neque impedit nihil praesentium dicta ipsum. Eos harum repellat eum? Saepe!
                     Aliquid odio rem suscipit dolor ipsam mollitia est cupiditate laborum reiciendis fugit molestias explicabo soluta quae laudantium magnam inventore, libero architecto veritatis quam, aut omnis ea assumenda! Quaerat, ratione placeat.
                     Qui architecto sunt asperiores harum ullam consequuntur eligendi similique ex fugiat aliquam est, in quas distinctio necessitatibus sapiente, earum odio libero culpa perspiciatis quasi iste a rerum! Dicta, corporis quisquam.
@@ -202,12 +208,27 @@ define('Alfredo', 5);
                 echo '<li>' . $imp . '</li>';
             }
             ?>
-            </ol>
         </div>
         <hr style="border: 1px; width:100%">
         <form action="ex2.php" method="post">
             <button type="submit">Buscar</button>
         </form>
+        <hr style="border: 1px; width:100%">
+        <blockquote cite="https://twitter.com/olikeka/status/785554206648365056">
+            <p>
+                "Vive como si fueses a morir mañana. Aprende como si fueses a vivir siempre"
+            </p>
+            <p style="color:blue;">— Mahatma Gandhi</p>
+        </blockquote>
+        <hr style="border: 1px; width:100%">
+        <footer>
+            <p>
+            <h1>Acerca de la pagina</h1>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus reiciendis repellat maiores mollitia, ipsa sit corrupti, obcaecati sint fuga dolorum temporibus voluptatum, eius at repudiandae nulla ipsum molestias minus facere.
+            Vitae quisquam cumque praesentium animi libero ipsa sapiente dolor eum ab blanditiis minus soluta impedit natus, dignissimos enim culpa veritatis eos harum! Deleniti quibusdam aperiam esse voluptatem ex maiores quae?
+            <br>By <autor style="font-weight: bold;color:blue">Ezequiel Isidoro Espinoza Rodriguez</autor>
+            </p>
+        </footer>
     </center>
 </body>
 

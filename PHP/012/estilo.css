@@ -67,3 +67,26 @@ aside
     border-style: groove;
     border-color: rgb(0, 0, 0);
 }
+footer
+{
+    width: 99%;
+    font-style: italic;
+    color: black;
+    background-color: rgb(192, 28, 207);
+    border-width: 5px;
+    border-style: groove;
+    border-color: rgb(0, 0, 0);
+}
+blockquote
+{
+    width: 50%;
+    background-color: rgb(192, 28, 207);
+    border-width: 5px;
+    border-style: groove;
+    border-color: rgb(0, 0, 0);
+}
+nav
+{
+    background-color:deepskyblue;
+    color: aliceblue;
+}
