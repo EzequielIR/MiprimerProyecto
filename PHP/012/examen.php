@@ -1,18 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/estilo.css" type="text/css">
+    <title>Examen</title>
+</head>
 <?php
-#Variables.............
-#Constantes................
-#Arreglos asociaviativos.......................
-#Arreglos multidimencionales (5 dimenciones)..................
-#Numero de elementos de un arreglo............
-#Recorrer areglos mediante elementos de un arreglo foreach..............
-#Ordenar arreglos......................
-#Condicional if..............
-#Operacionales.....................
-#Switch.........................
-#Condicional corto.....................
-#Ciclo for...................
-#ciclo while....................
-#___________________________________________________________________________________________________________________________________
 #Lista de alumnos
 #Ezequiel = 1
 #Roberto = 2
@@ -28,30 +24,48 @@ define('Archivaldo', 4);
 define('Alfredo', 5);
 
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css" type="text/css">
-    <title>Examen</title>
-</head>
-<video src="fondo.mp4" autoplay loop muted></video>
+<video src="video/fondo.mp4" autoplay loop muted style="
+    position: fixed;/*Pocicion de video*/
+    min-width: 100%;/*Tamaño minimo de video ancho*/
+    min-height: 100%;/*Tamano miniomo de video largo*/
+    top: 50%;/*Pocicion de video arriba*/
+    left: 50%;/*Pocicion de video izquierda*/
+    transform: translateX(-50%) translateY(-50%);/*Mover el video hacia los vordes*/
+    z-index: -1;/*Pocicion de video de fondo con eje z*/
+"></video>
+<nav>
+    <et2>
+        <img src="img/inst.png" alt="Logo escuela" style="width:70px;height:70px">
+    </et2>
+    <et2>
+        &nbsp; Clase 1A: &nbsp;
+    </et2>
+    <et1>
+        <h1><a href="ex2.php" target="_blank">Home</a></h1>
+    </et1>
+    <et1>
+        <form action="ex2.php" method="get">
+            <h1>
+                <titulo>Buscar Alumno: </titulo>
+                <input type="text" name="nombre">
+                <button type="submit">Buscar</button>
+            </h1>
+        </form>
+    </et1>
+    <et1>
+        <h1><a href="index.html" target="_top">Cerrar seción</a></h1>
+    </et1>
+</nav>
 <center>
     <figure>
-        <img src="inst.png" alt="Logo escuela">
+        <hr style="height: 50px;border:0px">
+        <img src="img/inst.png" alt="Logo escuela" style="width:250px;height:250px">
         <figcaption>Escuela de chorrillos militar</figcaption>
     </figure>
 </center>
 
 <body>
     <center>
-        <hr style="border: 1px; width:100%">
-        <nav style="font-size:50px">Clase 1A</nav>
-        <hr style="border: 1px; width:100%">
         <?php
 
         #Arreglo asociativo
@@ -95,6 +109,16 @@ define('Alfredo', 5);
                 </article>
                 </br>
             </div>
+            <video autoplay loop muted src="video/lol.mp4" style="width:250px;height:150px"></video>
+            <nombreM>
+                <audio controls src="audio/ChillDa.mp3" style="width:90%;height:100px"></audio>
+                LAKEY INSPIRED - Chill Day
+            </nombreM>
+            <nombreM>
+                <audio controls src="audio/AC.mp3" style="width:90%;height:100px"></audio>
+                Aerolínea Carrillo - T3R Elemento
+                <hr style="border:0px">
+            </nombreM>
         </aside>
         <?php
         #Arreglo muntidimencional
@@ -198,7 +222,7 @@ define('Alfredo', 5);
         <?php
         }
         ?>
-        <hr style="border: 1px; width:100%">
+        <hr style="border: 0px">
         <div class="prom">
             <?php
             #Ordenar Promedios de mayor a menor e imprecion con ciclo foreach
@@ -209,10 +233,6 @@ define('Alfredo', 5);
             }
             ?>
         </div>
-        <hr style="border: 1px; width:100%">
-        <form action="ex2.php" method="post">
-            <button type="submit">Buscar</button>
-        </form>
         <hr style="border: 1px; width:100%">
         <blockquote cite="https://twitter.com/olikeka/status/785554206648365056">
             <p>
@@ -228,6 +248,7 @@ define('Alfredo', 5);
             Vitae quisquam cumque praesentium animi libero ipsa sapiente dolor eum ab blanditiis minus soluta impedit natus, dignissimos enim culpa veritatis eos harum! Deleniti quibusdam aperiam esse voluptatem ex maiores quae?
             <br>By <autor style="font-weight: bold;color:blue">Ezequiel Isidoro Espinoza Rodriguez</autor>
             </p>
+            <br>
         </footer>
     </center>
 </body>

@@ -1,0 +1,105 @@
+.Container
+{
+    font-size: 28px;/*Tamaño de fuente*/
+    width: 714px;/*Ancho de cuadro*/
+    height: 260px;/*Largo de cuadro*/
+    background-image: url(../img/fondo.jpg);/*Fondo de cuadro*/
+    font-family: 'Courier New', Courier, monospace;/*Fuente de letra*/
+    font-weight: bold;/*Letras negrita*/
+    border-width: 5px;/*Tamaño del marco*/
+    border-style: groove;/*Estilo de marco*/
+    border-color:rgb(0, 0, 0);/*Color de marco*/
+}
+.lista
+{
+    background-color: rgb(192, 28, 207);/*Color de fondo*/
+    width: 290px;/*Ancho del contenedor*/
+    height: 500;/*largo del contenedor*/
+    border-width: 5px;/*Ancho del  marco del contenedor*/
+    border-style: groove;/*Tipo de  marco del contenedor*/
+    border-color: rgb(0, 0, 0);/*Color de  marco del contenedor*/
+    float: left;/*Pocicion del contenedor*/
+}
+.prom
+{
+    text-align: center;/*Alineación del texto*/
+    background-color: rgb(192, 28, 207);/*Color de fondo*/
+    width: 400px;/*Ancho del contenedor*/
+    height: 240px;/*largo del contenedor*/
+    border-width: 5px;/*Ancho del  marco del contenedor*/
+    border-style: groove;/*Tipo de  marco del contenedor*/
+    border-color: rgb(0, 0, 0);/*Color de  marco del contenedor*/
+}
+
+a:link,
+a:visited,
+a:active 
+{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+aside 
+{
+    width: 20%;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px;
+    font-style: italic;
+    color: black;
+    background-color: rgb(192, 28, 207);
+    border-width: 5px;
+    border-style: groove;
+    border-color: rgb(0, 0, 0);
+}
+footer
+{
+    width: 99%;
+    font-style: italic;
+    color: black;
+    background-color: rgb(192, 28, 207);
+    border-width: 5px;
+    border-style: groove;
+    border-color: rgb(0, 0, 0);
+}
+blockquote
+{
+    width: 50%;
+    background-color: rgb(192, 28, 207);
+    border-width: 5px;
+    border-style: groove;
+    border-color: rgb(0, 0, 0);
+}
+nav
+{
+    position: fixed;
+    background-color:deepskyblue;
+    top: 0;
+    left: 0%;
+    right: 0%;
+    height: 70px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+et1
+{
+    object-fit: fill;
+    height: 70px;
+    text-align: center;
+    flex-grow: 1;
+    opacity: .8;
+    transition: .5s ease;
+}
+et1:hover
+{
+    background-color: rgb(192, 28, 207);
+}
+et2
+{
+    text-align: center;
+    font-size: 50px;
+    object-fit: fill;
+    height: 70px;
+}
