@@ -47,7 +47,7 @@ define('Alfredo', 5);
     <et1>
         <form action="ex2.php" method="get">
             <h1>
-                <titulo>Buscar Alumno: </titulo>
+                <titulo><i>Buscar Alumno: </i></titulo>
                 <input type="text" name="nombre">
                 <button type="submit">Buscar</button>
             </h1>
@@ -61,7 +61,7 @@ define('Alfredo', 5);
     <figure>
         <hr style="height: 50px;border:0px">
         <img src="img/inst.png" alt="Logo escuela" style="width:250px;height:250px">
-        <figcaption>Escuela de chorrillos militar</figcaption>
+        <figcaption><b>Escuela de chorrillos militar</b></figcaption>
     </figure>
 </center>
 
@@ -99,9 +99,9 @@ define('Alfredo', 5);
                 </ol>
                 </br>
                 <hr style="border:3px solid black;width:100%">
-                <h1>Acerca de la escuela</h1>
+                <h1><U>Acerca de la escuela</U></h1>
                 <article>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem rerum molestias accusamus molestiae autem hic dolor nam neque sed enim dolore ut laudantium quo, optio quam eaque a vitae sunt.
+                    <em>Lorem ipsum dolor sit amet, consectetur</em> adipisicing elit. Voluptatem rerum molestias accusamus molestiae autem hic dolor nam neque sed enim dolore ut laudantium quo, optio quam eaque a vitae sunt.
                     Asperiores fuga eius veritatis, consequatur labore blanditiis dolorum qui fugit nostrum magnam minus laborum aliquam et culpa placeat quis neque impedit nihil praesentium dicta ipsum. Eos harum repellat eum? Saepe!
                     Aliquid odio rem suscipit dolor ipsam mollitia est cupiditate laborum reiciendis fugit molestias explicabo soluta quae laudantium magnam inventore, libero architecto veritatis quam, aut omnis ea assumenda! Quaerat, ratione placeat.
                     Qui architecto sunt asperiores harum ullam consequuntur eligendi similique ex fugiat aliquam est, in quas distinctio necessitatibus sapiente, earum odio libero culpa perspiciatis quasi iste a rerum! Dicta, corporis quisquam.
@@ -113,11 +113,11 @@ define('Alfredo', 5);
             <video autoplay loop muted src="video/lol.mp4" style="width:250px;height:150px"></video>
             <nombreM>
                 <audio controls src="audio/ChillDa.mp3" style="width:90%;height:100px"></audio>
-                LAKEY INSPIRED - Chill Day
+                <strong>LAKEY INSPIRED - Chill Day</strong>
             </nombreM>
             <nombreM>
                 <audio controls src="audio/AC.mp3" style="width:90%;height:100px"></audio>
-                Aerolínea Carrillo - T3R Elemento
+                <strong>Aerolínea Carrillo - T3R Elemento</strong>
                 <hr style="border:0px">
             </nombreM>
         </aside>
@@ -237,9 +237,9 @@ define('Alfredo', 5);
         <hr style="border: 1px; width:100%">
         <blockquote cite="https://twitter.com/olikeka/status/785554206648365056">
             <p>
-                "Vive como si fueses a morir mañana. Aprende como si fueses a vivir siempre"
+                <big>"Vive como si fueses a morir mañana. Aprende como si fueses a vivir siempre"</big>
             </p>
-            <p style="color:blue;">— Mahatma Gandhi</p>
+            <p style="color:blue;"><small>— Mahatma Gandhi</small></p>
         </blockquote>
         <hr style="border: 1px; width:100%">
         <footer>
@@ -247,7 +247,7 @@ define('Alfredo', 5);
             <h1>Acerca de la pagina</h1>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus reiciendis repellat maiores mollitia, ipsa sit corrupti, obcaecati sint fuga dolorum temporibus voluptatum, eius at repudiandae nulla ipsum molestias minus facere.
             Vitae quisquam cumque praesentium animi libero ipsa sapiente dolor eum ab blanditiis minus soluta impedit natus, dignissimos enim culpa veritatis eos harum! Deleniti quibusdam aperiam esse voluptatem ex maiores quae?
-            <br>By <autor style="font-weight: bold;color:blue">Ezequiel Isidoro Espinoza Rodriguez</autor>
+            <br><code>By</code> <autor style="font-weight: bold;color:blue">Ezequiel Isidoro Espinoza Rodriguez</autor>
             </p>
             <br>
         </footer>
