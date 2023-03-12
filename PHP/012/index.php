@@ -30,6 +30,16 @@
                 <button type="submit" name="inicia">Iniciar seción</button>
                 <button type="submit" name="user">Agregar Usuario</button>
             </form>
+            <br>
+            <texto style="font-size:20px;color:aliceblue">
+                Accede con:
+            </texto>
+            <hr>
+            <div class="inicio">
+                <img src="img/gogle.png" alt="">
+                <img src="img/face.png" alt="">
+                <img src="img/aple.png" alt="">
+            </div>
             <?php
             if (isset($_REQUEST['inicia'])) {
                 // index.php 
