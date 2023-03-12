@@ -21,21 +21,28 @@
 <body>
     <center>
         <section>
-            <h1>Iniciar seción</h1>
-            <texto>Usuario: </texto><input type="text" name="User">
-            <hr style="height: 5px;border:0px">
-            <texto>Contraseña: </texto><input type="password" name="password">
-            <hr style="height: 5px;border:0px">
-            <form name="form" action="index.php">
+            <form name="form" action="index.php" method="post">
+                <h1>Iniciar seción</h1>
+                <texto>Usuario: </texto><input type="text" name="usuario">
+                <hr style="height: 5px;border:0px">
+                <texto>Contraseña: </texto><input type="password" name="pas">
+                <hr style="height: 5px;border:0px">
                 <button type="submit" name="inicia">Iniciar seción</button>
                 <button type="submit" name="user">Agregar Usuario</button>
             </form>
             <?php
             if (isset($_REQUEST['inicia'])) {
                 // index.php 
-                header("Location: examen.php");
-                exit();
+                $user = $_POST['usuario'];
+                $psswd = $_POST['pas'];
+                if ($user == 'admin' && $psswd == '12345') {
+                    header("Location: examen.php");
+                    exit();
+                } else {
+                    echo "<h1>Usuario o Contraseña incorrecta intente de nuevo</h1>";
+                }
             }
+
             if (isset($_REQUEST['user'])) {
                 header("Location: newuser.php");
                 exit();
