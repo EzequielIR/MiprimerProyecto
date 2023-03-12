@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo/estilo.css" type="text/css">
-    <title>Examen</title>
+    <link rel="shortcut icon" href="img/inst.png">
+    <title>Bienvenido</title>
 </head>
 <?php
 #Lista de alumnos
@@ -53,7 +54,7 @@ define('Alfredo', 5);
         </form>
     </et1>
     <et1>
-        <h1><a href="index.html" target="_top">Cerrar seción</a></h1>
+        <h1><a href="index.php" target="_top">Cerrar seción</a></h1>
     </et1>
 </nav>
 <center>

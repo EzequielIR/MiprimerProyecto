@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo/inicio.css">
     <title>Inicio</title>
+    <link rel="shortcut icon" href="img/inst.png">
 </head>
 <video src="video/fondo.mp4" autoplay loop muted style="
     position: fixed;/*Pocicion de video*/
@@ -36,9 +37,10 @@
             </texto>
             <hr>
             <div class="inicio">
-                <img src="img/gogle.png" alt="">
-                <img src="img/face.png" alt="">
-                <img src="img/aple.png" alt="">
+                <a title="Inicia con google" href="https://accounts.google.com/" target="_blank"><img src="img/gogle.png" alt="Google" /></a>
+                <a title="Inicia con facebook" href="https://www.facebook.com/" target="_blank"><img src="img/face.png" alt="Facebook" /></a>
+                <a title="Inicia con apple" href="https://www.icloud.com/" target="_blank"><img src="img/aple.png" alt="Apple" /></a>
+                <a title="Inicia con instagram" href="https://www.instagram.com/" target="_blank"><img src="img/insta.png" alt="Instagram" /></a>
             </div>
             <?php
             if (isset($_REQUEST['inicia'])) {
