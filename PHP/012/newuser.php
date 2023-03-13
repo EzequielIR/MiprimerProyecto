@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/inicio.css">
+    <link rel="stylesheet" href="estilo/form.css">
     <link rel="shortcut icon" href="img/inst.png">
     <title>Registro de usuarios</title>
 </head>
@@ -22,7 +22,37 @@
 <body>
     <center>
         <section>
-            
+            <h1>Agregar usuario</h1>
+            <form action="muestra.php" method="post">
+                <campo>Nombre: </campo>
+                <input name="nombre" type="search" placeholder="nombre">
+                <hr style="border: 0px; width:100%">
+                <campo>Apellido paterno: </campo>
+                <input name="apellidoP" type="text" placeholder="apellido paterno">
+                <hr style="border: 0px; width:100%">
+                <campo>Apellido materno: </campo>
+                <input name="apellidoM" type="text" placeholder="apellido materno">
+                <hr style="border: 0px; width:100%">
+                <campo>Fecha de nacimiento: </campo>
+                <input name="fecha" type="date">
+                <hr style="border: 0px; width:100%">
+                <campo>Edad: </campo>
+                <input name="numero" type="number">
+                <hr style="border: 0px; width:100%">
+                <campo>Telefono: </campo>
+                <input name="telefono" type="tel">
+                <hr style="border: 0px; width:100%">
+                <campo>Url de perfil persanalizada: </campo>
+                <input name="link" type="url" placeholder="https://www.chorrillos_militar_ejemplo.mx" style="width: 210px; text-align: center">
+                <hr style="border: 1px; width:100%">
+                <campo>Tipo de usuario: </campo>
+                <select name="tipo">
+                    <option selected="Alumno">Alumno</option>
+                    <option selected="Maestro">Maestro</option>
+                </select>
+                <hr style="border: 1px; width:100%">
+                <button type="submit" name="envia">Enviar</button>
+            </form>
         </section>
     </center>
 </body>

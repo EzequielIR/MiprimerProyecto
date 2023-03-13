@@ -3,7 +3,7 @@ section
     position: absolute;
     background-color: blue;
     align-items: center;
-    height: 50%;
+    height: 67%;
     width: 50%;
     box-shadow:
        inset 0 -3em 3em rgba(0,0,0,0.1),
@@ -22,7 +22,6 @@ section
     display: flex;
     justify-content: space-around;
     left: 35%;
-    right: 35%;
 }
 img
 {
@@ -35,4 +34,8 @@ img:hover
 {
     height: 70px;
     width: 70px;
+}
+imprime
+{
+    font-size: 20px;
 }

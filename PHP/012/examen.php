@@ -42,10 +42,10 @@ define('Alfredo', 5);
         &nbsp; Clase 1A: &nbsp;
     </et2>
     <et1>
-        <h1><a href="ex2.php" target="_blank">Home</a></h1>
+        <h1><a href="examen.php" target="_self">Home</a></h1>
     </et1>
     <et1>
-        <form action="ex2.php" method="get">
+        <form action="ex2.php" method="get" target="_blank">
             <h1>
                 <titulo><i>Buscar Alumno: </i></titulo>
                 <input type="text" name="nombre">
@@ -112,7 +112,7 @@ define('Alfredo', 5);
             </div>
             <video autoplay loop muted src="video/lol.mp4" style="width:250px;height:150px"></video>
             <nombreM>
-                <audio controls src="audio/ChillDa.mp3" style="width:90%;height:100px"></audio>
+                <audio src="audio/ChillDa.mp3" controls autoplay loop style="width:90%;height:100px"></audio>
                 <strong>LAKEY INSPIRED - Chill Day</strong>
             </nombreM>
             <nombreM>
