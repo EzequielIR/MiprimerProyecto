@@ -13,7 +13,7 @@
 .lista
 {
     background-color: rgb(192, 28, 207);/*Color de fondo*/
-    width: 290px;/*Ancho del contenedor*/
+    width: 20%;/*Ancho del contenedor*/
     height: 500;/*largo del contenedor*/
     border-width: 5px;/*Ancho del  marco del contenedor*/
     border-style: groove;/*Tipo de  marco del contenedor*/

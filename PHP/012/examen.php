@@ -45,7 +45,7 @@ define('Alfredo', 5);
         <h1><a href="examen.php" target="_self">Home</a></h1>
     </et1>
     <et1>
-        <form action="ex2.php" method="get" target="_blank">
+        <form action="ex2.php" method="post" target="_blank">
             <h1>
                 <titulo><i>Buscar Alumno: </i></titulo>
                 <input type="text" name="nombre">

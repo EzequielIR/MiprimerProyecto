@@ -1,5 +1,5 @@
 <?php
-$buscar=$_GET['nombre'];
+$buscar=$_POST['nombre'];
  #Arreglo muntidimencional
  ?>
 <!DOCTYPE html>

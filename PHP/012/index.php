@@ -42,25 +42,25 @@
                 <a title="Inicia con apple" href="https://www.icloud.com/" target="_blank"><img src="img/aple.png" alt="Apple" /></a>
                 <a title="Inicia con instagram" href="https://www.instagram.com/" target="_blank"><img src="img/insta.png" alt="Instagram" /></a>
             </div>
-            <?php
-            if (isset($_REQUEST['inicia'])) {
-                // index.php 
-                $user = $_POST['usuario'];
-                $psswd = $_POST['pas'];
-                if ($user == 'admin' && $psswd == '12345') {
-                    header("Location: examen.php");
-                    exit();
-                } else {
-                    echo "<h1>Usuario o Contraseña incorrecta intente de nuevo</h1>";
-                }
-            }
-
-            if (isset($_REQUEST['user'])) {
-                header("Location: newuser.php");
-                exit();
-            }
-            ?>
         </section>
+        <?php
+        if (isset($_REQUEST['inicia'])) {
+            // index.php 
+            $user = $_POST['usuario'];
+            $psswd = $_POST['pas'];
+            if ($user == 'admin' && $psswd == '12345') {
+                header("Location: examen.php");
+                exit();
+            } else {
+                echo '<h1 style="color:red">Usuario o Contraseña incorrecta intente de nuevo</h1>';
+            }
+        }
+
+        if (isset($_REQUEST['user'])) {
+            header("Location: newuser.php");
+            exit();
+        }
+        ?>
     </center>
 </body>
 

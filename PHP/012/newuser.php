@@ -25,13 +25,13 @@
             <h1>Agregar usuario</h1>
             <form action="muestra.php" method="post">
                 <campo>Nombre: </campo>
-                <input name="nombre" type="search" placeholder="nombre">
+                <input name="nomb" type="search" placeholder="nombre">
                 <hr style="border: 0px; width:100%">
                 <campo>Apellido paterno: </campo>
-                <input name="apellidoP" type="text" placeholder="apellido paterno">
+                <input name="apeP" type="text" placeholder="apellido paterno">
                 <hr style="border: 0px; width:100%">
                 <campo>Apellido materno: </campo>
-                <input name="apellidoM" type="text" placeholder="apellido materno">
+                <input name="apeM" type="text" placeholder="apellido materno">
                 <hr style="border: 0px; width:100%">
                 <campo>Fecha de nacimiento: </campo>
                 <input name="fecha" type="date">
@@ -51,7 +51,16 @@
                     <option selected="Maestro">Maestro</option>
                 </select>
                 <hr style="border: 1px; width:100%">
-                <button type="submit" name="envia">Enviar</button>
+                <campo>Año: </campo>
+                <select name="year">
+                    <?php
+                        for ($i=0; $i < 24; $i++) { 
+                            ?><option selected="year"><?php echo ($i+2000); ?></option><?php
+                        }
+                    ?>
+                </select>
+                <hr style="border: 1px; width:100%">
+                <button type="submit" >Enviar</button>
             </form>
         </section>
     </center>
