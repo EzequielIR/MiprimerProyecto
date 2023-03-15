@@ -36,8 +36,8 @@
                 <campo>Fecha de nacimiento: </campo>
                 <input name="fecha" type="date">
                 <hr style="border: 0px; width:100%">
-                <campo>Edad: </campo>
-                <input name="numero" type="number">
+                <campo>Correo: </campo>
+                <input name="mail" type="text">
                 <hr style="border: 0px; width:100%">
                 <campo>Telefono: </campo>
                 <input name="telefono" type="tel">

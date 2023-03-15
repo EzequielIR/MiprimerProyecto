@@ -45,9 +45,21 @@
         </section>
         <?php
         if (isset($_REQUEST['inicia'])) {
-            // index.php 
             $user = $_POST['usuario'];
             $psswd = $_POST['pas'];
+            if (!empty($nombre)) {
+                $nombre = filter_var($user, FILTER_SANITIZE_STRING);
+                if (!filter_var($user, FILTER_SANITIZE_STRING)) {
+                    $errores .= 'Usuario invalido <br/>';
+                }
+            }
+            if (!empty($psswd)) {
+                $psswd = filter_var($psswd, FILTER_SANITIZE_NUMBER_INT);
+                if (!filter_var($psswd, FILTER_SANITIZE_NUMBER_INT)) {
+                    $errores .= 'Contraseña invalido <br/>';
+                }
+            }
+            // index.php 
             if ($user == 'admin' && $psswd == '12345') {
                 header("Location: examen.php");
                 exit();
