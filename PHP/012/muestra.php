@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,7 +25,7 @@
             $bandera = false;
             #foreach
             foreach ($_POST as $campo) {
-                if ( strlen($campo) == 0) {
+                if (strlen($campo) == 0) {
                     $bandera = true;
                 }
             }
@@ -35,83 +34,83 @@
                 <imprime>
                     <h1>Información de usuario</h1>
                     <?php
-                    $nombre = $_POST['nomb']; 
+                    $nombre = $_POST['nomb'];
                     $app = $_POST['apeP'];
                     $apm = $_POST['apeM'];
                     $fe = $_POST['fecha'];
-                    $co =$_POST['mail'];
-                    $t = $_POST['telefono']; 
+                    $co = $_POST['mail'];
+                    $t = $_POST['telefono'];
                     $l = $_POST['link'];
                     $t = $_POST['tipo'];
                     $y = $_POST['year'];
-                    
+
                     $errores = '';
-                    
+
                     if (!empty($nombre)) {
                         $nombre = filter_var($nombre, FILTER_SANITIZE_STRING);
-                        if (!filter_var($nombre, FILTER_SANITIZE_STRING)) {
+                        if ($nombre == "") {
                             $errores .= 'Nombre invalido <br/>';
-                        }else{
+                        } else {
                             echo "Nombre: " . $nombre;
                             echo "<br>";
                         }
                     }
                     if (!empty($app)) {
                         $app = filter_var($app, FILTER_SANITIZE_STRING);
-                        if (!filter_var($app, FILTER_SANITIZE_STRING)) {
+                        if ($app == "") {
                             $errores .= 'Apellido Paterno invalido <br/>';
-                        }else{
+                        } else {
                             echo "Apellido paterno: " . $app;
                             echo "<br>";
                         }
                     }
                     if (!empty($apm)) {
                         $apm = filter_var($apm, FILTER_SANITIZE_STRING);
-                        if (!filter_var($apm, FILTER_SANITIZE_STRING)) {
+                        if ($apm == "") {
                             $errores .= 'Apellido Materno invalido <br/>';
-                        }else{
+                        } else {
                             echo "Apellido materno: " . $apm = $_POST['apeM'];
                             echo "<br>";
                         }
                     }
                     if (!empty($fe)) {
-                        $fe = filter_var(preg_replace("([^0-9-])","",htmlentities($fe)));
-                        if (!filter_var(preg_replace("([^0-9-])","",htmlentities($fe)))) {
+                        $fe = filter_var(preg_replace("([^0-9-])", "", htmlentities($fe)));
+                        if ($fe == "") {
                             $errores .= 'Fecha invalida <br/>';
-                        }else{
-                            echo "Fecha: " . $fe;
+                        } else {
+                            echo "Fecha: ".$fe;
                             echo "<br>";
                         }
                     }
-                    
                     if (!empty($co)) {
                         $co = filter_var($co, FILTER_SANITIZE_EMAIL);
-                        if (!filter_var($co, FILTER_SANITIZE_EMAIL)) {
-                            $errores .= 'Correo invalida: <br/>';
-                        }else{
-                            echo "Correo electronico: " . $co;
-                            echo "<br>";
+                        if (!filter_var($co, FILTER_VALIDATE_EMAIL)) {
+                           echo $errores .= 'Correo invalido <br/>';
                         }
+                    } else {
+                        echo "Correo electronico: " . $co;
+                        echo "<br>";
                     }
+
                     if (!empty($t)) {
                         $t = filter_var($t, FILTER_SANITIZE_NUMBER_INT);
-                        if (!filter_var($t, FILTER_SANITIZE_NUMBER_INT)) {
+                        if (!filter_var($t, FILTER_VALIDATE_INT)) {
                             $errores .= 'Telefono invalida: <br/>';
-                        }else{
+                        } else {
                             echo "Telefono: " . $t;
                             echo "<br>";
                         }
                     }
                     if (!empty($l)) {
                         $l = filter_var($l, FILTER_SANITIZE_URL);
-                        if (!filter_var($l, FILTER_SANITIZE_URL)) {
+                        if (!filter_var($l, FILTER_VALIDATE_URL)) {
                             $errores .= 'Url invalida: <br/>';
-                        }else{
+                        } else {
                             echo "Dirección de perfil: " . $l;
                             echo "<br>";
                         }
                     }
-                    
+
                     echo "Tipo se usuario: " . $t = $_POST['tipo'];
                     echo "<br>";
                     echo "Año de registro: " . $y = $_POST['year'];
@@ -122,17 +121,16 @@
                     <button>Inicio</button>
                 </form>
             <?php
-            }else {
-                ?>
+            } else {
+            ?>
                 <H1 style="color:red;font: size 50px;">Favor de llenar los campos correctamente</H1>
                 <form action="newuser.php">
                     <button>Volver</button>
                 </form>
-               <?php
+            <?php
             }
             ?>
         </section>
     </center>
 </body>
-
 </html>
