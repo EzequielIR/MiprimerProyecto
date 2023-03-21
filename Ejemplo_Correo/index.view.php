@@ -35,7 +35,7 @@
                 </div>
             <?php } ?>
             <center>
-                <input type="submit" name="submit" class="btn btn-primary" value="Envias Correo">
+                <input type="submit" name="submit" class="btn btn-primary" value="Enviar Correo">
             </center>
         </form>
     </div>

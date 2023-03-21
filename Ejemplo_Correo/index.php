@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
     if (!empty($mensaje)) {
         //Podermos sanitizar con filter var
         //Comvertir signos del mensaje en entidades HTML
-        $mensaje = htmlentities($mensaje);
+        $mensaje = htmlspecialchars($mensaje);
         $mensaje = trim($mensaje);
         $mensaje = stripslashes($mensaje);
     }else {
