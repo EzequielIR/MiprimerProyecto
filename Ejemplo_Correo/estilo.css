@@ -22,6 +22,7 @@ form
 {
     width: 100%;
     margin: 20px 0;
+    /*relleno*/
     padding: 20px;
     background: #fff;
     /*se define lo que muestra el contenido si se desborda o no*/
