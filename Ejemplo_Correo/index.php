@@ -38,6 +38,7 @@ if (isset($_POST['submit'])) {
         $mensaje = htmlspecialchars($mensaje);
         //Elimina tabs, space, \n, null, tab vertical, retorno de carro
         $mensaje = trim($mensaje);
+        //barras invertidas
         $mensaje = stripslashes($mensaje);
     }else {
         $errores.= 'Por favor ingresa el mensaje.<br/>';
