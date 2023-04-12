@@ -1,1 +1,2 @@
-import mediapipe as mp
+import pyswip
+print(pyswip.__version__)

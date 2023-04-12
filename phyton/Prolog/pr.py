@@ -8,7 +8,7 @@ resultado=None
 prolog=Prolog()
 
 #usamos el metodo consult(archivo) para ejecutar lo que hay en ese archivo
-prolog.consult("2.heroes.pl")
+prolog.consult('2.heroes.pl')
 
 X = input("Super heroe: ")
 
