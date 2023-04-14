@@ -29,7 +29,9 @@ with mp_hands.Hands(
       for hand_landmarks in results.multi_hand_landmarks:
         #print("HAND LANDMARKS: ",hand_landmarks)
         mp_drawing.draw_landmarks(
-            image, hand_landmarks, mp_hands.HAND_CONNECTIONS)
+            image, hand_landmarks, mp_hands.HAND_CONNECTIONS,
+            mp_drawing.DrawingSpec(color=(255,255,0),thickness=4,circle_radius=5),
+            mp_drawing.DrawingSpec(color=(255,0,255),thickness=4))
     cv2.imshow('MediaPipe Hands', image)
     if cv2.waitKey(5) & 0xFF == 27:
       break
