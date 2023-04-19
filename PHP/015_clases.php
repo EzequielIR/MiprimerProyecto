@@ -1,5 +1,5 @@
 <?php
-    class Persona{
+    class Person{
         #Variables=propiedades y Funciones=metodos
         public $nombre;
         public $edad;
@@ -17,7 +17,7 @@
             echo "Hola mundo <br>";
         }
     }
-    $perso=new Persona;
+    $perso=new Person;
     $perso->nombre='Ezequiel';
     $perso->edad=21;
     $perso->pais='Mexico';
@@ -26,7 +26,7 @@
     echo "Nombre: ".$perso->nombre.", Edad: ".$perso->edad.", Pais: ".$perso->pais.'.<br>';
     echo var_dump($perso).'<br>';
 
-    $otro=new Persona;
+    $otro=new Person;
     $otro->nombre='Isidoro';
     $otro->edad=22;
     $otro->pais='USA';
