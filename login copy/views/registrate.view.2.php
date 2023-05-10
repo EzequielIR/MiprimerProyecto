@@ -19,7 +19,7 @@
         <form class="formulario" name="login" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="post">
             <div class="form-group">
                 <i class="icono izquierda fa fa-user"></i><input class="usuario" type="text" name="usuario" placeholder="Us<link
-                href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.main.css'" rel="stylesheet" integrity="sha384uario">
+                href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.main.css"" rel="stylesheet" integrity="sha384uario">
             </div>
             <div class="form-group">
                 <i class="icono izquierda fa fa-lock"></i><input class="password" type="password" name="password2" placeholder="Contraseña">
