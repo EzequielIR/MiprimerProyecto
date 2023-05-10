@@ -23,7 +23,7 @@
     <center>
         <section>
             <form name="form" action="index.php" method="post">
-                <h1>Iniciar sesión</h1>
+                <h1>Iniciar seción</h1>
                 <texto>Usuario: </texto><input type="text" name="usuario">
                 <hr style="height: 5px;border:0px">
                 <texto>Contraseña: </texto><input type="password" name="pas">
@@ -56,7 +56,7 @@
             if (!empty($psswd)) {
                 $psswd = filter_var($psswd, FILTER_SANITIZE_NUMBER_INT);
                 if (!filter_var($psswd, FILTER_SANITIZE_NUMBER_INT)) {
-                    $errores .= 'Contraseña invalido <br/>';
+                    $errores .= 'Contraseña invalida <br/>';
                 }
             }
             // index.php 
