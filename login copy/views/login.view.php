@@ -23,7 +23,6 @@
                 <i class="icono izquierda fa fa-lock"></i><input class="password_btn" type="password" name="password" placeholder="Password">
                 <i class="submit-btn fa fa-arrow-right" onclick="login.submit()"></i>
             </div>
-            Registrate
 
             <?php if (!empty($errores)): ?>
                 <div class="error">

@@ -11,12 +11,10 @@
         $password = $_POST['password'];
         $passw2 = $_POST['password2'];
 
-    }
-
     $errores = '';
 
     if (empty($usuario) or empty($password or empty($passw2))) {
-        $errores = '<li>Por favor rellena todos los datos correctamente<li>';
+        $errores = '<li>Por favor rellena todos los datos correctamente</li>';
     } else {
         try {
             $conexion = new PDO('mysql:host=localhost;dbname=login','root','');
@@ -33,8 +31,13 @@
             $errores .= '<li>El nombre de usuario ya existe</li>';
         }
 
-        $password = hash('sha512', $password);
-        $passw2 = hash('sha512', $passw2);
+        $password = password_hash($password, PASSWORD_DEFAULT);
+        $passw2ha = password_hash($passw2, PASSWORD_DEFAULT);
+
+        if (!(password_verify($passw2, $password))) {
+            $errores.= '<li>Las contraseñas no son iguales</li>';
+        }
+    }
 
         if ($errores == '') {
             $statement = $conexion->prepare('INSERT INTO usuarios(id, usuario, pass) VALUES (null, :usuario, :pass)');
@@ -42,7 +45,7 @@
 
             header('Location: login.php');
         }
-    }
+}
 
     require 'views/registrate.view.php';
 ?>
