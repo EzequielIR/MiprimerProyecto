@@ -11,7 +11,7 @@
     $postPorPagina = 5;
 
     $inicio = ($pagina > 1) ? ($pagina * $postPorPagina - $postPorPagina) : 0;
-    
+
     $articulos = $conexion->prepare("SELECT SQL_CALC_FOUND_ROWS * FROM articulos LIMIT $inicio, $postPorPagina");
 
     $articulos->execute();
