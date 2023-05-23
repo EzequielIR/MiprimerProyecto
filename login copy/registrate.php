@@ -1,6 +1,5 @@
 <?php 
     session_start();
-
     if (isset($_SESSION['usuario'])) {
         header('Location: index.php');
         die();
@@ -32,7 +31,6 @@
         }
 
         $password = password_hash($password, PASSWORD_DEFAULT);
-        $passw2ha = password_hash($passw2, PASSWORD_DEFAULT);
 
         if (!(password_verify($passw2, $password))) {
             $errores.= '<li>Las contraseñas no son iguales</li>';
