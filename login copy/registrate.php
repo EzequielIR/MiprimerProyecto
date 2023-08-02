@@ -37,7 +37,7 @@
         }
     }
 
-        if ($errores == '') {
+        if (empty($errores)) {
             $statement = $conexion->prepare('INSERT INTO usuarios(id, usuario, pass) VALUES (null, :usuario, :pass)');
             $statement->execute(array(':usuario' => $usuario, ':pass' => $password));
 

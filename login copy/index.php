@@ -1,4 +1,4 @@
-<?php   session_start(); 
+<?php   session_start(); //crear reanudar
     if (isset($_SESSION['usuario'])) {
         header('Location: contenido.php');
         die();
