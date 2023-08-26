@@ -17,19 +17,19 @@
             echo "Hola mundo <br>";
         }
     }
-    $perso=new Person;
-    $perso->nombre='Ezequiel';
-    $perso->edad=21;
-    $perso->pais='Mexico';
+    // $perso=new Person;
+    // $perso->nombre='Ezequiel';
+    // $perso->edad=21;
+    // $perso->pais='Mexico';
 
     $perso->mostrarInformacion();
     echo "Nombre: ".$perso->nombre.", Edad: ".$perso->edad.", Pais: ".$perso->pais.'.<br>';
     echo var_dump($perso).'<br>';
 
-    $otro=new Person;
-    $otro->nombre='Isidoro';
-    $otro->edad=22;
-    $otro->pais='USA';
+    // $otro=new Person;
+    // $otro->nombre='Isidoro';
+    // $otro->edad=22;
+    // $otro->pais='USA';
 
     echo "Nombre: ".$otro->nombre.", Edad: ".$otro->edad.", Pais: ".$otro->pais.'.<br>';
     echo var_dump($otro).'<br>';

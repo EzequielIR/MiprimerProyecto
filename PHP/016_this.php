@@ -9,10 +9,10 @@
         }
     }
 
-    $perso=new Person;
-    $perso->nombre='Ezequiel';
-    $perso->edad=21;
-    $perso->pais='Mexico';
+    // $perso=new Person;
+    // $perso->nombre='Ezequiel';
+    // $perso->edad=21;
+    // $perso->pais='Mexico';
 
     $perso->mostrarInformacion();
 

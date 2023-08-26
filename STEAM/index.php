@@ -6,7 +6,7 @@
     <title>Barra de búsqueda de Steam</title>
 </head>
 <body>
-    <form action="buscar.php" method="GET">
+    <form action="prueba.php" method="get">
         <input type="text" name="query" placeholder="Buscar juegos en Steam">
         <input type="text" name="appid" placeholder="Buscar juegos en Steam appid">
         <button type="submit">Buscar</button>

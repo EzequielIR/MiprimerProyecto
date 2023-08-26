@@ -1,43 +1,38 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Información del juego en Steam</title>
-</head>
-<body>
-<?php
-if (isset($_GET['appid'])) {
-    $appId = $_GET['appid'];
+    <?php
 
-    // Obtener la clave de API de Steam
-    $apiKey = '3FD9BDCD4B0A34A5984EC05827408F16';
+    if (empty($bus)) {
 
-    // Preparar la URL para obtener información del juego
-    $url_game_info = "https://store.steampowered.com/api/appdetails?appids=" . $appId;
+        // Si no está definida, asignarle un valor
+        $bus = $_GET['query'];
 
-    // Realizar la solicitud a la API de Steam para obtener información del juego
-    $response_game_info = file_get_contents($url_game_info);
-    $data_game_info = json_decode($response_game_info, true);
+        // Obtener la clave de API de Steam
+        $apiKey = '3FD9BDCD4B0A34A5984EC05827408F16';
 
-    // Verificar si la solicitud fue exitosa y si hay datos disponibles
-    if ($data_game_info[$appId]['success']) {
-        $game_info = $data_game_info[$appId]['data'];
+        // Preparar la URL de la API de búsqueda
+        $query = urlencode($bus);
+        $url = "https://api.steampowered.com/ISteamApps/GetAppList/v2/";
 
-        // Mostrar información adicional del juego
-        echo '<h1>' . $game_info['name'] . '</h1>';
-        echo '<p>' . $game_info['short_description'] . '</p>';
-        echo '<p>Desarrollador: ' . $game_info['developers'][0] . '</p>';
-        echo '<p>Editor: ' . $game_info['publishers'][0] . '</p>';
-        echo '<p>Precio: ' . $game_info['price_overview']['final_formatted'] . '</p>';
-        echo "<img src='$game_info[header_image]' alt='$game_info[short_description]'></img>";
-        echo '<p>Descripción: ' . $game_info['detailed_description'].'</p>';
+        // Realizar la solicitud a la API de Steam
+        $response = file_get_contents($url);
+        $data = json_decode($response, true);
 
-        // También puedes mostrar más información, como capturas de pantalla, videos, estadísticas, etc.
-    } else {
-        echo '<p>No se encontró información para el juego con ID ' . $appId . '</p>';
+        // Mostrar los resultados de búsqueda
+        foreach ($data['applist']['apps'] as $app) {
+            if (strpos($app['name'], $query) !== false) {
+                $busqueda[] = ['appid' => $app['appid']];
+            }
+        }
     }
-} else {
-    echo '<p>No se ha especificado un ID de juego válido.</p>';
-}
-?>
-</body>
-</html>
+
+    $pagina = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
+
+    $postPorPagina = 10;
+
+    $inicio = ($pagina > 1) ? ($pagina * $postPorPagina - $postPorPagina) : 0;
+
+    $cantidad_elementos = count($busqueda);
+
+    $numeroPaginas = ceil($cantidad_elementos / $postPorPagina);
+
+    require 'prueba.view.php';
+    ?>
